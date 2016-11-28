@@ -1,0 +1,14 @@
+{
+  "name": "twilio-azure-functions-sms-node",
+  "version": "1.0.0",
+  "description": "Receive SMS with Azure Functions and Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Twilio",
+  "license": "MIT",
+  "dependencies": {
+    "twilio": "^2.11.1"
+  }
+}
