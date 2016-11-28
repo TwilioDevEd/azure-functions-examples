@@ -4,7 +4,8 @@ using System.Net;
 using System.Text;
 using Twilio.TwiML;
 
-public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, 
+    TraceWriter log)
 {
     log.Info("C# HTTP trigger function processed a request.");
 
@@ -16,7 +17,8 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
     // Perform calculations, API lookups, etc. here
     
-    var response = new MessagingResponse().Message($"You said: {formValues["Body"]}");
+    var response = new MessagingResponse()
+        .Message($"You said: {formValues["Body"]}");
     var twiml = response.ToString();
     twiml = twiml.Replace("utf-16", "utf-8");
 
