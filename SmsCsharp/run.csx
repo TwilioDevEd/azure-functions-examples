@@ -19,11 +19,9 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req,
     
     var response = new MessagingResponse()
         .Message($"You said: {formValues["Body"]}");
-    var twiml = response.ToString();
-    twiml = twiml.Replace("utf-16", "utf-8");
 
     return new HttpResponseMessage
     {
-        Content = new StringContent(twiml, Encoding.UTF8, "application/xml")
+        Content = new StringContent(response.ToString(), Encoding.UTF8, "application/xml")
     };
 }

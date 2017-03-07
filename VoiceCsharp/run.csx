@@ -25,11 +25,9 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req,
 
     var response = new VoiceResponse()
         .Say($"Your phone number is {number}");
-    var twiml = response.ToString();
-    twiml = twiml.Replace("utf-16", "utf-8");
 
     return new HttpResponseMessage
     {
-        Content = new StringContent(twiml, Encoding.UTF8, "application/xml")
+        Content = new StringContent(response.ToString(), Encoding.UTF8, "application/xml")
     };
 }

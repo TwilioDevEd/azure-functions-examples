@@ -2,7 +2,7 @@
   "frameworks": {
     "net46":{
       "dependencies": {
-        "Twilio": "5.0.0-rca1"
+        "Twilio": "5.0.2"
       }
     }
    }

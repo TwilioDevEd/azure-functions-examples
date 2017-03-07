@@ -5,7 +5,7 @@ These examples show how you can create [webhooks](https://en.wikipedia.org/wiki/
 For a full discussion of this code, check out our two guides:
 
 - [Serverless Webhooks with Azure Functions and C#](https://www.twilio.com/docs/guides/serverless-webhooks-azure-functions-and-csharp)
-- Serverless Webhooks with Azure Functions and Node.js (coming soon)
+- [Serverless Webhooks with Azure Functions and Node.js](https://www.twilio.com/docs/guides/serverless-webhooks-azure-functions-and-node-js)
 
 ## Meta
 
