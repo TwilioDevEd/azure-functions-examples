@@ -9,6 +9,6 @@
   "author": "Twilio",
   "license": "MIT",
   "dependencies": {
-    "twilio": "^2.11.1"
+    "twilio": "^3.0.0"
   }
 }
