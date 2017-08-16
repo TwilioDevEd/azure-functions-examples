@@ -11,12 +11,12 @@ module.exports = function (context, req) {
   const twiml = new VoiceResponse();
   twiml.say('Your phone number is: ' + phoneNumber);
 
-  res = {
+  context.res = {
     status: 200,
     body: twiml.toString(),
     headers: { 'Content-Type': 'application/xml' },
     isRaw: true
   };
 
-  context.done(null, res);
+  context.done();
 };
